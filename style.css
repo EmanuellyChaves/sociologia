@@ -1,0 +1,92 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+nav.menu-lateral{
+    width: 90px;
+    height: 100%;
+    background-color: rgb(194, 37, 90);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 black;
+    position: fixed;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+.btn-expandir{
+   width: 100%;
+   padding: 0; 
+}
+.btn-expandir > i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu{
+    transition: .2s;
+}
+ul li.ativo{
+    background-color: black;
+}
+ul li.item-menu:hover{
+    background: black;
+}
+ul li.item-menu a{
+color: white;
+text-decoration: none;
+font-size: 20px;
+padding:20px 4% ;
+display: flex;
+}
+ul li.item-menu a .txt-link{
+margin-left: 35px;
+transition: .5s;
+opacity: 0;
+}
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 60px ;
+    opacity: 1;
+}
+ul li.item-menu a .icon > i{
+font-size: 30px;
+margin-left: 2px;
+}
+.search-box a >i{
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.search-box >i{
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.search-box{
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius: 40px;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palevioletred;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+}
